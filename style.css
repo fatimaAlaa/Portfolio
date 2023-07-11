@@ -1,0 +1,444 @@
+@font-face {
+    font-family: customFont;
+    src: url(fonts/YsabeauSC-Light.ttf);
+}
+
+body {
+    background-color: #000;
+    color: white;
+    margin: 0px;
+    font-family: customFont;
+    cursor: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff95f6;
+    border-radius: 20px;
+}
+
+#cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0ff;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+    z-index: 100000;
+    box-shadow: 0 0 5px #0ff,
+        /* inner glow */
+        0 0 10px #0ff,
+        /* middle glow */
+        0 0 15px #0ff,
+        /* outer glow */
+        0 0 20px #0ff;
+    /* far outer glow */
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 3s ease-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.profile {
+    position: relative;
+}
+
+.profile h1 {
+    font-size: 7vw;
+    position: absolute;
+    bottom: 20%;
+    left: 4%;
+    color: #fff;
+    text-shadow:
+        0 0 7px #233ec5,
+        0 0 10px #233ec5,
+        0 0 21px #233ec5,
+        0 0 42px #47fefa,
+        0 0 82px #47fefa,
+        0 0 92px #47fefa,
+        0 0 102px #47fefa,
+        0 0 151px #47fefa;
+    transition: 3s;
+    -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract-bck-top {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px) translateY(-300px);
+        transform: translateZ(400px) translateY(-300px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract-bck-top {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px) translateY(-300px);
+        transform: translateZ(400px) translateY(-300px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+.profile p {
+    font-size: 3vw;
+    color: #fff;
+    position: absolute;
+    bottom: 18%;
+    left: 4%;
+    transition: 3s;
+    -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.aboutme {
+    margin: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.description h1 {
+    font-size: 6rem;
+    /* border: 1px solid; */
+    position: relative;
+}
+
+.description h1::after {
+    opacity: 0.7;
+    transition: all 0.1s ease-in-out;
+    content: "";
+    position: absolute;
+    bottom: 13.5%;
+    z-index: -1;
+    height: 0.3em;
+    width: 55%;
+    left: 23%;
+    background: linear-gradient(65deg, #9440e8 0%, #ff95f6 100%, rgba(255, 209, 0, 0) 100%);
+}
+
+/* .description h1:hover{
+    color: rgb(255, 240, 240);
+    border: 1px solid wheat;
+}
+.description h1:hover:after{
+    transition: all 0.1s ease-in-out;
+    bottom: 14%;
+    z-index: -1;
+    height: 65%;
+    width: 58%;
+    left: 21%;
+    background: linear-gradient(65deg, #9440e8 0%, #ff95f6 100%, rgba(255, 209, 0, 0) 100%);
+} */
+
+.description p {
+    font-size: 1.5rem
+}
+
+.myface img {
+    margin: 10px;
+    width: auto;
+    height: auto;
+    border-radius: 2rem;
+    box-shadow:
+        0 0 2rem #ff95f6,
+        0 0 0.8rem #ff95f6,
+        inset 0 0 1.3rem #ff95f6;
+}
+
+.myface img:hover {
+    transition: 2s;
+    transform: scale(1.1);
+}
+
+#expertise {
+    position: relative;
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#expertise h1 {
+    font-size: 6rem;
+
+}
+
+#expertise h1::after {
+    opacity: 0.7;
+    transition: all 0.1s ease-in-out;
+    content: "";
+    position: absolute;
+    bottom: 15%;
+    z-index: -1;
+    height: 0.3em;
+    width: 54%;
+    left: 23.5%;
+    background: linear-gradient(65deg, #0482a8 0%, #ff95f6 100%, rgba(255, 209, 0, 0) 100%);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    transition: 1s;
+}
+
+.cards {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.cards>div {
+    align-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 2rem;
+    padding: 5%;
+    box-shadow:
+        0 0 1rem #41d3ff,
+        0 0 0.8rem #41d3ff,
+        inset 0 0 1.3rem #41d3ff;
+}
+
+.cards>div:hover {
+    background-color: #41d3ff;
+    color: black;
+    transition: 10ms;
+    transform: scale(1.1);
+}
+
+.cards h5 {
+    font-size: 1.3rem;
+}
+
+.card1 .top,
+.card2 .top {
+    opacity: 1;
+}
+
+.card1 .bottom,
+.card2 .bottom {
+    opacity: 0;
+}
+
+.card1:hover .top,
+.card2:hover .top {
+    opacity: 0;
+}
+
+.card1:hover .bottom,
+.card2:hover .bottom {
+    opacity: 1;
+}
+
+.title {
+    align-items: center;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+.title>h2 {
+    margin-left: 10px;
+}
+
+.mywork {
+    margin: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid; */
+}
+
+.projects {
+    margin-left: 5%;
+    height: auto;
+    width: fit-content;
+    align-items: center;
+}
+
+.projects .btn {
+    margin: 10%;
+    padding: 30px;
+    display: inline-block;
+    color: #8eacb6;
+    background: #8eacb6;
+    box-shadow: 0 0 50px #8eacb6;
+    border-radius: 50%;
+}
+
+.projects .btn:hover {
+    transform: scale(1.1);
+    transition: 3s;
+}
+
+.mywork .description {
+    margin-left: 3%;
+    margin-right: 3%;
+    position: relative;
+}
+
+.mywork .description h1::after {
+    opacity: 0.7;
+    transition: all 0.1s ease-in-out;
+    content: "";
+    position: absolute;
+    bottom: 13.5%;
+    z-index: -1;
+    height: 0.3em;
+    width: 55%;
+    left: 23%;
+    background: linear-gradient(65deg, #8eacb6 0%, #ff95f6 100%, rgba(255, 209, 0, 0) 100%);
+}
+
+.container {
+    border-top: 1px solid #ff95f6;
+    align-items: center;
+    text-align: center;
+    box-shadow:
+        0 0 0.9rem #ff95f6,
+        inset 0 0 1.3rem #ff95f6;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-shadow:
+        0 0 5px #ff95f6,
+        0 0 10px #ff95f6,
+        0 0 15px #ff95f6,
+        0 0 20px #ff95f6,
+        0 0 30px #ff95f6,
+        0 0 40px #ff95f6;
+    height: 240px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    font-size: 1.5rem;
+}
+
+.item {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    color: white;
+    height: auto;
+    transition: 0.2s ease-in-out;
+}
+
+.container .item:hover {
+    background-color: #ff95f6;
+    height:85%;
+}
+
+.container a {
+    color: black;
+    text-decoration: none;
+}
+
+.item>*:not(h3) {
+    display: none;
+}
+
+.item:hover>* {
+    display: block;
+    color: black;
+}
+
+@media screen and (max-width:450px) {
+    #cursor {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .profile h1 {
+        bottom: 10%;
+        left: 4%;
+    }
+
+    .profile p {
+        bottom: 8%;
+        left: 4%;
+    }
+
+    .aboutme,
+    .cards,
+    .mywork,
+    .container {
+        grid-template-columns: auto;
+    }
+
+    .description h1 {
+        font-size: 3rem;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
+
+    #expertise h1{
+        font-size: 3rem;
+    }
+
+    .description p {
+        font-size: 1rem;
+    }
+
+    .myface img {
+        max-width: 80%;
+    }
+
+    .title {
+        font-size: 1rem;
+
+    }
+
+    div p {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .container,
+    .item {
+        height: fit-content;
+        font-size: 1rem;
+    }
+}
