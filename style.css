@@ -186,7 +186,7 @@ body {
     transform: scale(1.1);
 }
 
-#expertise {
+#expertise h1{
     margin-top: 15%;
     position: relative;
     width: 50%;
@@ -417,6 +417,7 @@ body {
 
     #expertise h1 {
         font-size: 3rem;
+        width: fit-content;
     }
 
     .description p {
