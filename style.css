@@ -135,7 +135,7 @@ body {
 
 .description h1 {
     font-size: 6rem;
-    /* border: 1px solid; */
+    border: 1px solid;
     position: relative;
 }
 
@@ -187,6 +187,7 @@ body {
 }
 
 #expertise {
+    margin-top: 15%;
     position: relative;
     width: 50%;
     padding-left: 5%;
@@ -195,7 +196,7 @@ body {
 
 #expertise h1 {
     font-size: 6rem;
-
+    border: 1px solid;
 }
 
 #expertise h1::after {
@@ -206,8 +207,8 @@ body {
     bottom: 15%;
     z-index: -1;
     height: 0.3em;
-    width: 54%;
-    left: 23.5%;
+    width: 38%;
+    left: 32%;
     background: linear-gradient(65deg, #0482a8 0%, #ff95f6 100%, rgba(255, 209, 0, 0) 100%);
 }
 
@@ -217,15 +218,12 @@ body {
     grid-template-rows: 1fr;
     align-items: center;
     transition: 1s;
-}
-
-.cards {
     margin-left: 10%;
     margin-right: 10%;
 }
 
 .cards>div {
-    align-content: center;
+    align-items: center;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
@@ -235,6 +233,8 @@ body {
         0 0 1rem #41d3ff,
         0 0 0.8rem #41d3ff,
         inset 0 0 1.3rem #41d3ff;
+    height: 80%;
+    overflow: hidden;
 }
 
 .cards>div:hover {
@@ -366,12 +366,13 @@ body {
 
 .container .item:hover {
     background-color: #ff95f6;
-    height:85%;
+    height: 85%;
 }
 
 .container a {
     color: black;
     text-decoration: none;
+    margin-bottom: 20px;
 }
 
 .item>*:not(h3) {
@@ -411,9 +412,10 @@ body {
         font-size: 3rem;
         margin-block-start: 0em;
         margin-block-end: 0em;
+        width: 50%;
     }
 
-    #expertise h1{
+    #expertise h1 {
         font-size: 3rem;
     }
 
