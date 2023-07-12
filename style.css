@@ -52,7 +52,7 @@ body {
 .profile h1 {
     font-size: 7vw;
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     left: 4%;
     color: #fff;
     text-shadow:
@@ -111,7 +111,7 @@ body {
     font-size: 3vw;
     color: #fff;
     position: absolute;
-    bottom: 18%;
+    bottom: 14%;
     left: 4%;
     transition: 3s;
     -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
