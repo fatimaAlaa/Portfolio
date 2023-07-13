@@ -260,7 +260,7 @@ body {
 .mywork {
     margin: 5%;
     margin-top: 10%;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -285,11 +285,6 @@ body {
     border-radius: 50%;
 }
 
-.projects .btn:hover {
-    transform: scale(1.1);
-    transition: 3s;
-}
-
 .mywork .description {
     margin-left: 3%;
     margin-right: 3%;
@@ -309,6 +304,126 @@ body {
     background: linear-gradient(65deg, #8eacb6 0%, #ff95f6 100%, rgba(255, 209, 0, 0) 100%);
 }
 
+.projectsDetails {
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    /* padding: 5%; */
+}
+
+.allProjects .first-row-projects {
+    height: fit-content;
+    width: fit-content;
+    padding: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: 2.7fr 1fr;
+    gap: 2%;
+}
+
+.allProjects .second-row-projects {
+    height: fit-content;
+    width: fit-content;
+    padding: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+}
+
+.allProjects .third-row-projects {
+    /* border: 1px solid; */
+    height: fit-content;
+    width: fit-content;
+    padding: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15%;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 2%;
+}
+
+.projectsDetails .img {
+    height: fit-content;
+    width: 100%;
+    align-items: center;
+}
+
+.projectsDetails .img:hover {
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
+
+.projectsDetails .text-description {
+    padding: 3%;
+}
+
+.eContract {
+    border: 1px solid #167d7f;
+}
+
+.eContract:hover {
+    transition: 2s;
+    box-shadow:
+        0 0 0.9rem #167d7f,
+        0 0 3rem #167d7f;
+}
+
+.music {
+    border: 1px solid #cd723b;
+}
+
+.music:hover {
+    transition: 2s;
+    box-shadow:
+        0 0 0.9rem #cd723b,
+        0 0 3rem #cd723b;
+}
+
+.toters {
+    border: 1px solid #f7cc9b;
+}
+
+.toters:hover {
+    transition: 2s;
+    box-shadow:
+        0 0 0.9rem #f7cc9b,
+        0 0 3rem #f7cc9b;
+}
+
+.talabaty {
+    border: 1px solid #df616a;
+}
+
+.talabaty:hover {
+    transition: 2s;
+    box-shadow:
+        0 0 0.9rem #df616a,
+        0 0 3rem #df616a;
+}
+
+.LuckyShrub,
+.SCTweb,
+.signin {
+    border: 1px solid;
+}
+
+.LuckyShrub:hover,
+.SCTweb:hover,
+.signin:hover {
+    transition: 2s;
+    box-shadow:
+        0 0 0.9rem #e4a9ad,
+        0 0 3rem #e4a9ad;
+}
+
+
 .container {
     border-top: 1px solid #ff95f6;
     align-items: center;
@@ -316,7 +431,6 @@ body {
     box-shadow:
         0 0 0.9rem #ff95f6,
         inset 0 0 1.3rem #ff95f6;
-    background-color: black;
     color: white;
     font-size: 20px;
     letter-spacing: 1px;
@@ -415,6 +529,14 @@ body {
         display: flex;
         flex-wrap: wrap;
         overflow: hidden;
+    }
+
+
+    .allProjects .first-row-projects,
+    .allProjects .second-row-projects,
+    .allProjects .third-row-projects {
+        grid-template-columns: auto;
+        margin-bottom: 10%;
     }
 
     .container,
