@@ -186,8 +186,8 @@ body {
     bottom: 15%;
     z-index: -1;
     height: 0.3em;
-    width: 45%;
-    left: 28%;
+    width: 40%;
+    left: 26%;
     background: linear-gradient(65deg, #0482a8 0%, #ff95f6 100%, rgba(255, 209, 0, 0) 100%);
 }
 
