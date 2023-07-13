@@ -143,7 +143,7 @@ body {
     bottom: 13.5%;
     z-index: -1;
     height: 0.3em;
-    width: 60%;
+    width: 62%;
     left: 20%;
     background: linear-gradient(65deg, #9440e8 0%, #ff95f6 100%, rgba(255, 209, 0, 0) 100%);
 }
@@ -151,9 +151,7 @@ body {
 .description p {
     font-size: 1.5rem
 }
-.myface{
-    align-items: center;
-}
+
 .myface img {
     margin: 10px;
     width: auto;
@@ -188,8 +186,8 @@ body {
     bottom: 15%;
     z-index: -1;
     height: 0.3em;
-    width: 38%;
-    left: 32%;
+    width: 45%;
+    left: 28%;
     background: linear-gradient(65deg, #0482a8 0%, #ff95f6 100%, rgba(255, 209, 0, 0) 100%);
 }
 
