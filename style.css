@@ -303,10 +303,12 @@ body {
     left: 20%;
     background: linear-gradient(65deg, #8eacb6 0%, #ff95f6 100%, rgba(255, 209, 0, 0) 100%);
 }
-.allProjects{
+
+.allProjects {
     margin-left: 8%;
     margin-right: 8%;
 }
+
 .projectsDetails {
     height: fit-content;
     width: fit-content;
