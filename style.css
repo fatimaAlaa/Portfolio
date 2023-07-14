@@ -224,7 +224,7 @@ body:active * {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    align-items: center;
+    align-content: center;
     text-align: center;
 }
 
@@ -251,11 +251,18 @@ body:active * {
     font-size: 1.5rem
 }
 
+.myface {
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
 .myface img {
     margin: 10px;
     width: auto;
     height: auto;
     border-radius: 2rem;
+    align-self: center;
     box-shadow:
         0 0 2rem #ff95f6,
         0 0 0.8rem #ff95f6,
@@ -292,7 +299,7 @@ body:active * {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     align-items: center;
     transition: 1s;
