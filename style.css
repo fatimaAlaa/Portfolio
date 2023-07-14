@@ -46,15 +46,7 @@ body {
     opacity: 0;
 }
 
-#app {
-    z-index: 100;
-
-    &:hover {
-        opacity: 0.5;
-    }
-}
-
-body:active * {
+#profile:active * {
     animation: none !important;
 }
 
@@ -62,7 +54,6 @@ body:active * {
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
-    padding-bottom: 4vmin;
     margin-left: 3%;
 }
 
@@ -72,11 +63,8 @@ body:active * {
     grid-column: 1 / -1;
     grid-row: 1;
     height: 50%;
-    z-index: 2;
-
-    .title-inner {
-        display: inline-block;
-    }
+    z-index: 1;
+    animation: outer-left 1s 1s ease both;
 }
 
 @keyframes text-clip {
@@ -138,22 +126,11 @@ body:active * {
     width: 100%;
     left: 2%;
     background: linear-gradient(65deg, #0482a8 0%, #df616a 100%);
-
 }
 
 .mozart-inner {
     font-size: 3vw;
     animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
-
-#profile .title {
-    animation: outer-left 1s 1s ease both;
-}
-
-.main {
-    .cafe-inner {
-        display: inline-block;
-    }
 }
 
 .mozart {
@@ -165,7 +142,6 @@ body:active * {
     grid-column: 2;
     margin-left: -2rem;
     opacity: 0.7;
-
     animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
 
     @keyframes image-in {
@@ -197,7 +173,6 @@ body:active * {
     text-decoration: none;
     background: linear-gradient(45deg, #eee456, #0ff, #e71cdd, #e72224);
     background-size: 400% 400%;
-    border: none;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     animation: neonGlow 5s linear infinite;
@@ -337,7 +312,6 @@ body:active * {
 
 .cards .title {
     font-size: 1.5rem;
-    /* display: flex; */
     text-align: center;
     margin-left: 10px;
 }
@@ -400,7 +374,6 @@ body:active * {
     text-align: center;
     overflow: hidden;
     border-radius: 10px;
-    /* padding: 5%; */
 }
 
 .allProjects .first-row-projects {
@@ -426,7 +399,6 @@ body:active * {
 }
 
 .allProjects .third-row-projects {
-    /* border: 1px solid; */
     height: fit-content;
     width: fit-content;
     padding: 1%;
