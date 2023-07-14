@@ -72,6 +72,7 @@ body:active * {
     grid-row: 1;
     height: 50%;
     z-index: 2;
+
     /* background-color: black; */
     .title-inner {
         display: inline-block;
@@ -119,22 +120,28 @@ body:active * {
 }
 
 .main-inner {
+    font-weight: bolder;
     font-size: 8vw;
     display: inline-block;
     animation: inner-left 1s 1s ease both,
         text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-    background: linear-gradient(to right, #0ff,
-            #f32170);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    /* animation: gradientMove 5s linear infinite; */
+}
+
+.main-inner::after {
+    opacity: 0.5;
+    transition: all 0.1s ease-in-out;
+    content: "";
+    position: absolute;
+    bottom: 13.5%;
+    z-index: -1;
+    height: 0.3em;
+    width: 100%;
+    left: 2%;
+    background: linear-gradient(65deg, #0482a8 0%, #df616a 100%);
+
 }
 
 .mozart-inner {
-    background: linear-gradient(to right,#41d3ff, #f32170,
-            #0ff);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
     font-size: 3vw;
     animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
@@ -203,8 +210,8 @@ body:active * {
     bottom: 13.5%;
     z-index: -1;
     height: 0.3em;
-    width: 61%;
-    left: 20%;
+    width: 50%;
+    left: 25%;
     background: linear-gradient(65deg, #9440e8 0%, #ff95f6 100%, rgba(255, 209, 0, 0) 100%);
 }
 
@@ -246,8 +253,8 @@ body:active * {
     bottom: 15%;
     z-index: -1;
     height: 0.3em;
-    width: 42%;
-    left: 30%;
+    width: 33.5%;
+    left: 34%;
     background: linear-gradient(65deg, #0482a8 0%, #ff95f6 100%, rgba(255, 209, 0, 0) 100%);
 }
 
@@ -359,8 +366,8 @@ body:active * {
     bottom: 13.5%;
     z-index: -1;
     height: 0.3em;
-    width: 62%;
-    left: 20%;
+    width: 49.5%;
+    left: 26%;
     background: linear-gradient(65deg, #8eacb6 0%, #ff95f6 100%, rgba(255, 209, 0, 0) 100%);
 }
 
