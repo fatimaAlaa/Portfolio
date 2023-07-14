@@ -318,7 +318,7 @@ body:active * {
         0 0 1rem #41d3ff,
         0 0 0.8rem #41d3ff,
         inset 0 0 1.3rem #41d3ff;
-    height: 80%;
+    height: 90%;
     overflow: hidden;
 }
 
@@ -327,46 +327,24 @@ body:active * {
     color: black;
     transition: 10ms;
     transform: scale(1.1);
+    text-align: center;
 }
 
 .cards h5 {
+    text-align: center;
     font-size: 1.3rem;
 }
 
-.card1 .top,
-.card2 .top {
-    opacity: 1;
-}
-
-.card1 .bottom,
-.card2 .bottom {
-    opacity: 0;
-}
-
-.card1:hover .top,
-.card2:hover .top {
-    opacity: 0;
-}
-
-.card1:hover .bottom,
-.card2:hover .bottom {
-    opacity: 1;
-}
-
-.title {
-    align-items: center;
+.cards .title {
     font-size: 1.5rem;
-    display: flex;
-}
-
-.title>h2 {
+    /* display: flex; */
+    text-align: center;
     margin-left: 10px;
 }
 
 .mywork {
     margin: 5%;
     margin-top: 10%;
-    /* margin-bottom: 10%; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
