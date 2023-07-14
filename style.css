@@ -67,6 +67,7 @@ body:active * {
 }
 
 #profile .title {
+    margin-top: 10%;
     padding-left: 1em;
     grid-column: 1 / -1;
     grid-row: 1;
@@ -194,7 +195,7 @@ body:active * {
     color: black;
     text-transform: uppercase;
     text-decoration: none;
-    background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff);
+    background: linear-gradient(45deg, #eee456, #0ff, #e71cdd, #e72224);
     background-size: 400% 400%;
     border: none;
     border-radius: 30px;
@@ -531,9 +532,7 @@ body:active * {
     border-top: 1px solid #ff95f6;
     align-items: center;
     text-align: center;
-    box-shadow:
-        0 0 0.9rem #ff95f6,
-        inset 0 0 1.3rem #ff95f6;
+    box-shadow: inset 0 0 1.3rem #ff95f6;
     color: white;
     font-size: 20px;
     letter-spacing: 1px;
