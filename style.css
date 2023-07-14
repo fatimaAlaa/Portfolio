@@ -184,6 +184,38 @@ body:active * {
     }
 }
 
+.neon-button {
+    text-align: center;
+    width: fit-content;
+    margin-top: 5%;
+    display: inline-block;
+    padding: 15px;
+    font-size: 1vw;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff);
+    background-size: 400% 400%;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: neonGlow 5s linear infinite;
+}
+
+@keyframes neonGlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .aboutme {
     margin: 5%;
     margin-top: 10%;
