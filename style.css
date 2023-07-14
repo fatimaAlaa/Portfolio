@@ -73,7 +73,6 @@ body:active * {
     height: 50%;
     z-index: 2;
 
-    /* background-color: black; */
     .title-inner {
         display: inline-block;
     }
@@ -555,14 +554,8 @@ body:active * {
 }
 
 @media screen and (max-width:1000px) {
-    .profile h1 {
-        bottom: 10%;
-        left: 4%;
-    }
-
-    .profile p {
-        bottom: 8%;
-        left: 4%;
+    #profile {
+        margin: 0%;
     }
 
     .aboutme,
