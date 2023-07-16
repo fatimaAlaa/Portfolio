@@ -303,6 +303,7 @@ body {
     transition: 10ms;
     transform: scale(1.1);
     text-align: center;
+    transition: 2s;
 }
 
 .cards h5 {
