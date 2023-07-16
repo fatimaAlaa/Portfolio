@@ -3,14 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="images/AK-modified.png"
-            style="border-radius: 50%;">
+        <link rel="icon" href="images/AK-modified.png">
         <link rel="stylesheet" href="style.css">
         <title>Fatima Alaa</title>
     </head>
     <body>
         <div id="cursor"></div>
         <div id="profile">
+            <nav>
+                <div class="navicon">
+                    <div></div>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="#AboutMe">About ME</a>
+                <a href="#experts">Expertise</a>
+                <a href="#MyWork">My Work</a>
+                <a href="#certification">Certifications</a>
+                <a href="#Contact">Contact</a>
+            </nav>
             <div class="title">
                 <div class="title-inner">
                     <div class="main">
@@ -30,7 +40,7 @@
                 <img src='images/neonbg.jpg' alt='bg' width="100%">
             </div>
         </div>
-        <div class="aboutme fade-in hidden scroll-div">
+        <div class="aboutme fade-in hidden scroll-div" id="AboutMe">
             <div class="description">
                 <center>
                     <h1>About Me</h1>
@@ -55,14 +65,13 @@
                 <img src="images/mine.png" alt="My Photo">
             </div>
         </div>
-
-        <div class="expertise fade-in hidden scroll-div">
+        <div class="expertise fade-in hidden scroll-div" id="experts">
             <center>
                 <div id="expertise">
                     <h1>Expertise</h1>
                 </div>
             </center>
-            <div class="cards">
+            <div class="cardss">
                 <div class="card1">
                     <div class="title">
                         <h2>Front-end</h2>
@@ -110,9 +119,8 @@
                     </h5>
                 </div>
             </div>
-
         </div>
-        <div class="mywork fade-in hidden scroll-div">
+        <div class="mywork fade-in hidden scroll-div" id="MyWork">
             <div class="projects">
                 <div href="#allProjects" class="btn">
                     <img
@@ -252,7 +260,26 @@
                 </div>
             </div>
         </div>
-        <div class="container fade-in hidden scroll-div">
+        <center class="fade-in hidden scroll-div" id="certification">
+            <div class="certification">
+                <h1>Certifications</h1>
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/MC_Page_1.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/MC_Page_2.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/MC_Page_3.png" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+        </center>
+        <div class="container1 fade-in hidden scroll-div" id="Contact">
             <div class="item">
                 <h3>Contact</h3>
                 <p>Email: <a href="mailto:fatimaalgburi@gmail.com">fatimaalgburi@gmail.com</a></p>
